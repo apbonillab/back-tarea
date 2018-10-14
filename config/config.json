@@ -1,0 +1,16 @@
+{
+    "db": {
+        "host": "127.0.0.1",
+        "user": "root",
+        "password": "password",
+        "database": "uniandesteam",
+        "timeoutBeforeReconnection": "10000"
+    },
+    "test" : {
+        "host": "127.0.0.1",
+        "user": "root",
+        "password": "admin",
+        "database" : "uniandesteam_test",
+        "timeoutBeforeReconnection" : "10000"
+    }
+}

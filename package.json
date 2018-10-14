@@ -1,0 +1,35 @@
+{
+  "name": "uniandesteam-back",
+  "version": "1.0.0",
+  "description": "back uniandesTeam",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha --exit",
+    "start": "node app.js",
+    "coverage": "nyc --reporter=lcov --reporter=text-lcov npm test"
+  },
+  "author": "uniandesTeam",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chai": "^4.2.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "jenkins": "^0.22.1",
+    "mysql": "^2.16.0",
+    "nconf": "^0.10.0",
+    "newman": "^4.1.0",
+    "supertest": "^3.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/username/repository.git"
+  },
+  "devDependencies": {
+    "nyc": "^13.0.1",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.3",
+    "request": "^2.88.0"
+  }
+}

@@ -1,0 +1,269 @@
+{
+	"info": {
+		"_postman_id": "a0d4a11a-e41d-4b58-bc3f-dd5502656855",
+		"name": "uniandesTeam",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cities",
+			"item": [
+				{
+					"name": "getCountryById",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 200\"] = responseCode.code === 200;"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BaseURL}}:{{Port}}/cities/country/2",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"port": "{{Port}}",
+							"path": [
+								"cities",
+								"country",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Countries",
+			"item": [
+				{
+					"name": "getCountries",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 200\"] = responseCode.code === 200;"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BaseURL}}:{{Port}}/plans/countries",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"port": "{{Port}}",
+							"path": [
+								"plans",
+								"countries"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Plans",
+			"item": [
+				{
+					"name": "getAllPlans",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 200\"] = responseCode.code === 200;"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BaseURL}}:{{Port}}/plans/all",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"port": "{{Port}}",
+							"path": [
+								"plans",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPlanType",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 200\"] = responseCode.code === 200;"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BaseURL}}:{{Port}}/plans/type",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"port": "{{Port}}",
+							"path": [
+								"plans",
+								"type"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCustomPlan",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 200\"] = responseCode.code === 200;"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BaseURL}}:{{Port}}/plans/custom?num_days=2&num_persons=2&plan_type=1&city=1",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"port": "{{Port}}",
+							"path": [
+								"plans",
+								"custom"
+							],
+							"query": [
+								{
+									"key": "num_days",
+									"value": "2"
+								},
+								{
+									"key": "num_persons",
+									"value": "2"
+								},
+								{
+									"key": "plan_type",
+									"value": "1"
+								},
+								{
+									"key": "city",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "rangePlans",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 200\"] = responseCode.code === 200;"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BaseURL}}:{{Port}}/plans/filter-range?idCountry=4&minimum=1000&maximum=40000",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"port": "{{Port}}",
+							"path": [
+								"plans",
+								"filter-range"
+							],
+							"query": [
+								{
+									"key": "idCountry",
+									"value": "4",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "minimum",
+									"value": "1000",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "maximum",
+									"value": "40000",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

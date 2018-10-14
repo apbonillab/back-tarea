@@ -1,0 +1,25 @@
+{
+    "id": 3,
+    "name": "El Jardín Botánico \"José Celestino Mutis\"",
+    "cost": 2700,
+    "city": "Bogotá",
+    "country": "Colombia",
+    "provider": "Aviatur",
+    "planType": "Ecologico",
+    "numPerson": 7,
+    "numDay": 2,
+    "language": "Español",
+    "image": "http://www.jbb.gov.co/components/com_eventgallery/helpers/image.php?option=com_eventgallery&mode=full&view=resizeimage&folder=policianacional&file=policia-00.jpg",
+    "comments": [
+        {
+            "user": "Adriana",
+            "comment": "",
+            "grade": 3
+        },
+        {
+            "user": "Leonardo",
+            "comment": "Muy bonito, barato.",
+            "grade": 5
+        }
+    ]
+}
